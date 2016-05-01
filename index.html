@@ -259,11 +259,31 @@
           <h4 class="modal-title">Register for Full Stack Conf</h4>
         </div>
         <div class="modal-body">
-          <p>Form Goes Here</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <!-- registration form -->
+            <h5 class="m-b-2">Basic Info</h5>
+                  <form>
+          <fieldset class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="mail">Email:</label>
+            <input type="email" class="form-control" id="mail">
+          </fieldset>
+          <fieldset class="form-group">
+            <labe for="role">Job Role:</label>
+            <select class="form-control" id="role" name="user-role">
+              <option value="full stack js developer">Full Stack JavaScript Developer</option>
+              <option value="front end developer">Front End Developer</option>
+              <option value="back end developer">Back End Developer</option>
+              <option value="designer">Designer</option>          
+              <option value="student">Student</option> 
+            </select>
+          </fieldset>
+        </form>
+
+          <!-- /registration form -->
+        
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
