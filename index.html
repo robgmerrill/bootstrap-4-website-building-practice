@@ -6,6 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Full Stack Conference</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 <body id="home" data-spy="scroll" data-target=".navbar">
   <!-- navbar -->
@@ -90,44 +91,44 @@
 
     <div class="col-md-6 col-lg-4">
        <div class="card">
-        <img class="card-img-top img-fluid" src="img/tyler-morgan.jpg"
+        <img class="card-img-top img-fluid" src="img/rob-merrill.jpg"
          alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Tyler Morgan</h4>
-          <p class="card-text"><small class="text-muted">Tyler is a web developer and teacher who is passionate about Full Stack JavaScript and testing</small></p>
+          <h4 class="card-title">Rob Merrill</h4>
+          <p class="card-text"><small class="text-muted">Rob is a web developer and teacher who is passionate about Full Stack JavaScript and testing</small></p>
         </div>
       </div>
     </div>
 
     <div class="col-md-6 col-lg-4">
        <div class="card">
-        <img class="card-img-top img-fluid" src="img/tyler-morgan.jpg"
+        <img class="card-img-top img-fluid" src="img/brook-riggio.jpg"
          alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Tyler Morgan</h4>
-          <p class="card-text"><small class="text-muted">Tyler is a web developer and teacher who is passionate about Full Stack JavaScript and testing</small></p>
+          <h4 class="card-title">Brook Riggio</h4>
+          <p class="card-text"><small class="text-muted">Brook is a web developer and teacher who is passionate about Full Stack JavaScript and testing</small></p>
         </div>
       </div>
     </div>
 
     <div class="col-md-6 col-lg-4">
        <div class="card">
-        <img class="card-img-top img-fluid" src="img/tyler-morgan.jpg"
+        <img class="card-img-top img-fluid" src="img/dave-parker.jpg"
          alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Tyler Morgan</h4>
-          <p class="card-text"><small class="text-muted">Tyler is a web developer and teacher who is passionate about Full Stack JavaScript and testing</small></p>
+          <h4 class="card-title">Dave Parker</h4>
+          <p class="card-text"><small class="text-muted">Dave is a web developer and teacher who is passionate about Full Stack JavaScript and testing</small></p>
         </div>
       </div>
     </div>
 
     <div class="col-md-6 col-lg-4">
        <div class="card">
-        <img class="card-img-top img-fluid" src="img/tyler-morgan.jpg"
+        <img class="card-img-top img-fluid" src="img/will-little.jpg"
          alt="Card image cap">
         <div class="card-block">
-          <h4 class="card-title">Tyler Morgan</h4>
-          <p class="card-text"><small class="text-muted">Tyler is a web developer and teacher who is passionate about Full Stack JavaScript and testing</small></p>
+          <h4 class="card-title">Will Little</h4>
+          <p class="card-text"><small class="text-muted">Will is a web developer and teacher who is passionate about Full Stack JavaScript and testing</small></p>
         </div>
       </div>
     </div>
@@ -252,7 +253,7 @@
   <div id="register" class="modal fade">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
-        <div class="modal-header">
+        <div class="modal-header bg-info">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -261,18 +262,26 @@
         <div class="modal-body">
           <!-- registration form -->
             <h5 class="m-b-2">Basic Info</h5>
-                  <form>
+        
+          <div class="alert alert-warning alert-dismissible fade in" role="alert">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <strong>Hurry!</strong> Early bird registration ends in two days!
+        </div>
+
+        <form>
           <fieldset class="form-group">
             <label for="name">Name:</label>
             <input type="text" class="form-control" id="name">
           </fieldset>
-          <fieldset class="form-group">
-            <label for="mail">Email:</label>
+          <fieldset class="form-group has-danger">
+            <label for="mail" class="form-control-label">Email:</label>
             <input type="email" class="form-control" id="mail">
           </fieldset>
           <fieldset class="form-group">
             <labe for="role">Job Role:</label>
-            <select class="form-control" id="role" name="user-role">
+            <select class="c-select form-control" id="role" name="user-role">
               <option value="full stack js developer">Full Stack JavaScript Developer</option>
               <option value="front end developer">Front End Developer</option>
               <option value="back end developer">Back End Developer</option>
@@ -280,6 +289,90 @@
               <option value="student">Student</option> 
             </select>
           </fieldset>
+          <hr class="m-y-2">
+          <h5 class="m-b-2">Which Topics Interest You Most</h5>
+          <div class="form-group c-inputs-stacked">
+            <label class="c-input c-checkbox">
+            <input type="checkbox">
+            <span class="c-indicator"></span>
+            JavaScript Frameworks
+          </label>
+           <label class="c-input c-checkbox">
+            <input type="checkbox">
+            <span class="c-indicator"></span>
+            JavaScript Libraries
+          </label>
+           <label class="c-input c-checkbox">
+            <input type="checkbox">
+            <span class="c-indicator"></span>
+            Node.js
+          </label>
+           <label class="c-input c-checkbox">
+            <input type="checkbox">
+            <span class="c-indicator"></span>
+            Build Tools
+          </label>
+           <label class="c-input c-checkbox">
+            <input type="checkbox">
+            <span class="c-indicator"></span>
+            ES2015
+          </label>
+            
+          </div>
+
+        <hr class="m-b-2">
+        <h5 class="m-b-2">Payment Info</h5>
+
+          <div class="row">
+          <div class="col-lg-6 form-group has-success">
+            <label for="cc-num">Card Number:</label>
+            <input class="form-control" id="cc-num" type="text">
+          </div>
+
+          <div class="col-lg-3 form-group">
+            <label class="form-control-label" for="zip">Zip Code:</label>
+            <input class="form-control form-control-success" id="zip" type="text">
+          </div>
+
+          <div class="col-lg-3 form-group">
+            <label for="cvv">CVV:</label>
+            <input class="form-control" id="cvv" type="text">
+          </div>
+        </div>
+
+        <div class="row">
+          <label class="col-lg-12">Expiration Date:</label>
+          <div class="col-lg-8 form-group">
+            <select class="c-select form-control" id="exp-month">
+              <option value="1">1 - January</option>
+              <option value="2">2 - February</option>
+              <option value="3">3 - March</option>
+              <option value="4">4 - April</option>
+              <option value="5">5 - May</option>
+              <option value="6">6 - June</option>
+              <option value="7">7 - July</option>
+              <option value="8">8 - August</option>
+              <option value="9">9 - September</option>
+              <option value="10">10 - October</option>
+              <option value="11">11 - November</option> 
+              <option value="12">12 - December</option>                           
+              </select> 
+          </div>
+
+          <div class="col-lg-4 form-group">
+            <select class="c-select form-control" id="exp-year">
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>                          
+            </select>  
+          </div>
+        </div>
+          <hr class=m-b-2>
+          <button type="submit" class="btn btn-primary btn-lg">Register</button>
+
+
         </form>
 
           <!-- /registration form -->

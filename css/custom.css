@@ -1,0 +1,10 @@
+.navbar .navbar-brand {
+  color: rgba(255, 255, 255, .85);
+  font-size: 1rem;
+  padding-top: .45rem
+}
+
+.btn,
+.active {
+  transition: .4s;
+}
