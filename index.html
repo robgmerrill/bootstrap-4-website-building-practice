@@ -7,7 +7,7 @@
   <title>Full Stack Conference</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 </head>
-<body>
+<body id="home" data-spy="scroll" data-target=".navbar">
   <!-- navbar -->
     <nav class="navbar navbar-dark bg-primary navbar-fixed-top">
       <div class="container">
@@ -36,7 +36,7 @@
     <h1 class="display-2">Full Stack Conference</h1>
     <p class="lead">Come and hear how to be a full stack developer.</p>
         <div class="btn-group m-t-2" role="group" aria-label="Basic example">
-      <button type="button" class="btn btn-primary btn-lg">Register Now</button>
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
       <a class="btn btn-secondary btn-lg" href="#speakers">Speakers</a>
       </div>
       </div>
@@ -45,7 +45,7 @@
 <!-- /jumbotron -->
   <div class="container p-t-2">
     <!-- About -->
-  <div class="row">
+  <div id="about" class="row">
     <div class="col-md-4 col-lg-push-4">
       <h3 class="m-b-2">About Full Stack Conf</h3>
       <img class="img-fluid img-rounded m-b-1 hidden-xs-down" src="img/seattle.jpg" alt="seattle">
@@ -60,20 +60,20 @@
     </div>
     <div class="col-md-4">
       <h3 class="m-b-2">What You'll Learn</h3>
-        <ul>
-          <li><strong>MongoDB</strong>: NoSQL database</li>
-          <li><strong>Angular</strong>: JavaScript framework</li>
-          <li><strong>Express</strong>: Framework for Node</li>
-          <li><strong>Node.js</strong>: JavaScript environment</li>
-          <li><strong>ES2015</strong>: Latest version of JavaScript</li>
-          <li><strong>Babel</strong>: JavaScript compiler</li>
-        </ul>
+       <div class="list-group">
+  <a href="#" class="list-group-item"><strong>MongoDB</strong>: NoSQL database</a>
+  <a href="#" class="list-group-item"><strong>Angular</strong>: JavaScript framework </a>
+  <a href="#" class="list-group-item"><strong>Express</strong>: Framework for Node</a>
+  <a href="#" class="list-group-item"><strong>Node.js</strong>: JavaScript environment</a>
+  <a href="#" class="list-group-item"><strong>ES2015</strong>: Latest version of JavaScript</a>
+  <a href="#" class="list-group-item"><strong>Babel</strong>: JavaScript compiler</a>
+</div>
     </div>
   </div><!-- /about -->
 
   <!-- Speakers -->
 <h1 id="speakers" class="display-4 text-xs-center m-y-3 text-muted">Speakers</h1>
-[Speaker bios go here]
+
 
   <div class="row">
     <div class="col-md-6 col-lg-4">
@@ -147,11 +147,47 @@
 <!-- /speakers -->
 
   <!-- Schedule -->
-<h1 class="display-4 text-xs-center m-y-c text-muted">Schedule</h1>
-[Conference Schedule goes here]
+<h1 id="schedule" class="display-4 text-xs-center m-y-c text-muted">Schedule</h1>
+
+  <ul class="list-group">
+    <li class="list-group-item">
+      <h4 class="list-group-item-heading">Keynote: Internet of Things <span class="label label-info label-pill pull-xs-right">9:00am</span></h4>
+      
+      Tyler Morgan
+    </li>
+    <li class="list-group-item">
+      <h4 class="list-group-item-heading">Keynote: Angular Basics <span class="label label-info label-pill pull-xs-right">10:00am</span></h4>
+      
+      Tyler Morgan
+    </li>
+    <li class="list-group-item">
+       <h4 class="list-group-item-heading">Keynote: Testing in Node <span class="label label-info label-pill pull-xs-right">11:00am</span></h4>
+      
+      Tyler Morgan
+    </li>
+    <li class="list-group-item list-group-item-success">
+       <h4 class="list-group-item-heading">Lunch Break <span class="label label-info label-pill pull-xs-right">12:00pm</span></h4>
+      
+      Free Pizza for Everyone
+    </li>
+          <li class="list-group-item">
+        <h4 class="list-group-item-heading">Introducing ES2015 <span class="label label-info label-pill pull-xs-right">1:00pm</span></h4>
+        Tyler Morgan
+      </li>
+      <li class="list-group-item">
+        <h4 class="list-group-item-heading">Gettin' MEAN <span class="label label-info label-pill pull-xs-right">2:00pm</span></h4>
+        Tyler Morgan
+      </li>
+      <li class="list-group-item">
+        <h4 class="list-group-item-heading">What's Babel? <span class="label label-info label-pill pull-xs-right">3:00pm</span></h4>
+        Tyler Morgan
+      </li>
+  </ul>
+
+  <!-- /Schedule -->
 
 <!-- callout button -->
-<button type="button" class="btn btn-info-outline btn-lg center-block m-y-3">Don't Miss Out, Register Now!</button>
+<button type="button" class="btn btn-info-outline btn-lg center-block m-y-3" data-toggle="modal" data-target="#register">Don't Miss Out, Register Now!</button>
 <!-- /callout button -->
 
 <!-- signup form -->
@@ -211,6 +247,27 @@
 
 </div><!-- container -->
 
+<!-- Form Modal -->
+
+  <div id="register" class="modal fade">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title">Register for Full Stack Conf</h4>
+        </div>
+        <div class="modal-body">
+          <p>Form Goes Here</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
